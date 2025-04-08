@@ -1,3 +1,62 @@
+body {
+  background-color: #f8f9fa; /* Light gray background */
+  color: #343a40; /* Dark gray text */
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #007bff; /* Bootstrap primary color for headings */
+}
+
+a {
+  color: #007bff; /* Bootstrap primary color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: #343a40; /* Dark gray navigation menu */
+}
+
+.navbar-brand, .nav-link {
+  color: #ffffff !important; /* White text for navigation links */
+}
+
+.nav-link:hover {
+  color: #ffc107 !important; /* Bootstrap warning color for hover */
+}
+
+.table {
+  background-color: #ffffff; /* White background for tables */
+  border: 1px solid #dee2e6; /* Light gray border */
+}
+
+.table th {
+  background-color: #007bff; /* Bootstrap primary color for table headers */
+  color: #ffffff; /* White text for table headers */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2; /* Light gray for striped rows */
+}
+
+.btn {
+  background-color: #007bff; /* Bootstrap primary color for buttons */
+  color: #ffffff; /* White text for buttons */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
 .App {
   text-align: center;
 }

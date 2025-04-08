@@ -10,13 +10,24 @@ function Teams() {
   }, []);
 
   return (
-    <div>
-      <h1>Teams</h1>
-      <ul>
-        {teams.map(team => (
-          <li key={team._id}>{team.name}</li>
-        ))}
-      </ul>
+    <div className="mt-4">
+      <h1 className="text-center">Teams</h1>
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>Team Name</th>
+            <th>Members</th>
+          </tr>
+        </thead>
+        <tbody>
+          {teams.map(team => (
+            <tr key={team._id}>
+              <td>{team.name}</td>
+              <td>{team.members.map(member => member.username).join(', ')}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
