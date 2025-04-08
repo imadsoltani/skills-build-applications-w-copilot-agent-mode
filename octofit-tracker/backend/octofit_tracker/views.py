@@ -7,9 +7,7 @@ from .models import User, Team, Activity, Leaderboard, Workout
 from django.http import JsonResponse
 
 def api_root(request):
-    # Dynamically replace with the actual codespace name
-    codespace_name = os.getenv("CODESPACE_NAME", "[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]")
-    codespace_url = f"https://{codespace_name}-8000.app.github.dev"
+    codespace_url = "https://supreme-rotary-phone-qjrq47957jp2x4r5-8000.app.github.dev"
     localhost_url = "http://localhost:8000"
     return JsonResponse({
         "codespace_url": codespace_url,
